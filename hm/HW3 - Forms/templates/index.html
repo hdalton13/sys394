@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+    {% if 'email' in session %}
+        <p>Registered as {{ session.email }}; <a href="/logout">log out</a>.</p>
+    {% else %}
+        <p>Not registered; <a href="/register">Register NOW</a>.</p>
+    {% endif %}
+
+{% endblock %}

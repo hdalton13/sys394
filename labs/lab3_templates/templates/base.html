@@ -1,0 +1,20 @@
+<!--Template Inheritance-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <!--block directive takes an arbitrary name, which identifies the block
+    and extends to corresponding 'endblock' (see line 13)-->
+</head>
+<body>
+<h1>Heading from Base Template</h1>
+    {% block content %}
+        <p>Override this content!</p>
+    {% endblock %}
+</body>
+</html>
+
+<!--
+
+-->

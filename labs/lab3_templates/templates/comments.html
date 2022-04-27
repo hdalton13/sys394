@@ -1,0 +1,17 @@
+<!--Iteration-->
+<p>Here are some comments</p>
+<ul>
+{% for comment in comments %}
+    <li><strong>{{ comment.who }}</strong>: {{ comment.what }}</li>
+{% endfor %}
+<!--Above shows a for loop in html iterating the list of directories for the comments-->
+</ul>
+
+<!--^From that this is what should come up
+<h1>Comments</h1>
+<p>Here are some comments</p>
+<ul>
+    <li><strong>wesley</strong>: As you wish!</li>
+    <li><strong>vincini</strong>: Inconceivable</li>
+</ul>
+-->

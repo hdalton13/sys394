@@ -1,0 +1,14 @@
+<!--By:Heather Dalton-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+<h1>{%block header%}Heading from Base Template{%endblock%}</h1>
+    {% block content %}
+        <p>Override this content!</p>
+    {% endblock %}
+</body>
+</html>

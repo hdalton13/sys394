@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Confirmed{% endblock %}
+
+{%block header%} Confirmation {%endblock%}
+
+{% block content %}
+
+    {% if 'email' in session %}
+        <p>Registered as {{ session.email }}; <a href="/logout">log out</a>.</p>
+    {% endif %}
+{% endblock %}

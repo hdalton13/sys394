@@ -1,0 +1,13 @@
+<!--By:Heather Dalton-->
+{% extends "base.html" %}
+{% block title %}List of Letters{% endblock %}
+
+{% block header %}Templates HW {% endblock %}
+
+{% block content %}
+<ol>
+{% for x in letters %}
+    <li><strong>{{ x }}</strong></li>
+{% endfor %}
+</ol>
+{% endblock %}
